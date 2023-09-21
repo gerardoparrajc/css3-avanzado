@@ -74,7 +74,11 @@ body {
   background-image: linear-gradient(to right, #8dccf6, #0d6cab);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text; }
+  background-clip: text;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewX(15deg) skewY(2deg) scale(1.1); }
 
 .row {
   max-width: 114rem;
