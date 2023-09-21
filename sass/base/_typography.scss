@@ -50,3 +50,17 @@ body {
         transform: skewX(15deg) skewY(2deg) scale(1.1);
     }
 }
+
+.heading-tertiary {
+    font-size: $defautl-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $defautl-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
