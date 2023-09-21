@@ -66,6 +66,16 @@ body {
     letter-spacing: 2.8rem;
     animation: moveInRight 1s ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #8dccf6, #0d6cab);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text; }
+
 .row {
   max-width: 114rem;
   background-color: #eee;
