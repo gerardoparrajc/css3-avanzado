@@ -15,6 +15,11 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
+
+        @include respond(tab-port) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -28,6 +33,11 @@
         z-index: 1000;
         // Mostrar las páginas https://easings.net/ y https://cubic-bezier.com/
         transition: all .8s cubic-bezier(0.83, 0, 0.17, 1);
+
+        @include respond(tab-port) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav {
