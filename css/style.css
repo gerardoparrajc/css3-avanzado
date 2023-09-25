@@ -658,6 +658,10 @@ body {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -680,6 +684,16 @@ body {
     padding-top: 2rem;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none;
+        text-align: center; } }
+  @media (max-width: 56.25em) {
+    .footer .row {
+      max-width: 70rem; }
+      .footer .row [class^="col-"]:not(:last-child) {
+        margin-bottom: 2rem; } }
 
 .navigation__checkbox {
   display: none; }
