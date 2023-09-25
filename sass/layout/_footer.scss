@@ -4,6 +4,10 @@
     padding: 10rem 0;
     font-size: 1.4rem;
 
+    @include respond(tab-port) {
+        padding: 7rem 0;
+    }
+
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
@@ -12,6 +16,10 @@
     &__logo {
         width: 15rem;
         height: auto;
+
+        @include respond(tab-port) {
+            width: 12rem;
+        }
     }
 
     &__navigation {
