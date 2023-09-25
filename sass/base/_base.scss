@@ -38,30 +38,9 @@ html {
 
 body {    
     box-sizing: border-box;
-}
+    padding: 3rem;
 
-// Podemos crear todas las reglas dentro de un media query
-/* @media (max-width: 600px) {
-    html {
-
-    }
-
-    body {
-
-    }
-} */
-
-// O introducir media queries dentro de las reglas
-body {
-    @media (max-width: 600px) {
-
-    }
-
-    @include respond-phone {
-        font-size: 50%;
-    }
-
-    @include respond(phone) {
-        font-size: 50%;
+    @include respond(tab-port) {
+        padding: 0;
     }
 }
