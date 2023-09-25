@@ -1,16 +1,54 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
-html {
-  font-size: 62.5%;
+html {    
+    font-size: 62.5%;
+    /* Convertimos los 10px a porcentaje, tomando como referencia 16px, que es el valor por defecto del navegador */
+    /* 
+        1rem = 10px por lo que si tenemos 16px, sabemos que deben ser 1.6rem. 
+        Basta con dividir por 10 para tener los rem
+    */
+
+    /* @media (max-width: 600px) {
+        font-size: 50%;
+    }
+
+    @media (max-width: 900px) {
+        font-size: 50%;
+    } */
 }
 
+body {    
+    box-sizing: border-box;
+}
+
+// Podemos crear todas las reglas dentro de un media query
+/* @media (max-width: 600px) {
+    html {
+
+    }
+
+    body {
+
+    }
+} */
+
+// O introducir media queries dentro de las reglas
 body {
-  padding: 3rem;
-  box-sizing: border-box;
+    @media (max-width: 600px) {
+
+    }
+
+    @include respond-phone {
+        font-size: 50%;
+    }
+
+    @include respond(phone) {
+        font-size: 50%;
+    }
 }

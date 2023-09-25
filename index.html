@@ -1,31 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CodeKings</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
 
-  <body>
+    <link rel="stylesheet" href="./css/icon-font.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>CodeKings | Desarrollo web profesional</title>
+</head>
+<body>
+
+    <div class="navigation">
+        <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Acerca de CodeKings</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Beneficios</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Servicios</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Testimonios</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Pide presupuesto</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="header__logo-box">
-            <img src="./img/logo-blanco.png" alt="Logo CK" class="header__logo">
+            <img src="./img/logo-blanco.png" alt="Logo" class="header__logo">
         </div>
 
         <div class="header__text-box">
-            <h1 class="header__heading-primary">
-                <span class="header__heading-primary--main">Internet</span>
-                <span class="header__heading-primary--sub">todo está aquí</span>
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Internet</span>
+                <span class="heading-primary--sub">todo está aquí</span>
             </h1>
 
             <a href="#" class="btn btn--white btn--animated">Conoce nuestros servicios</a>
@@ -33,95 +55,371 @@
     </header>
 
     <main>
-      <section class="section-about">
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">
-            Servicios basados en la nube para un mundo digital
-          </h2>
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Servicios basados en la nube para un mundo digital
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">Todos tus datos a salvo</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus placeat quos voluptas expedita qui ipsa! Quo obcaecati, fugit vitae sapiente qui voluptate recusandae repellendus quos suscipit repudiandae aperiam necessitatibus incidunt.</p>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Datos repartidos por el mundo</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet aliquam laudantium magnam eaque, architecto aliquid quam veritatis maxime soluta. Similique dolorum, atque nesciunt facere nihil cumque alias totam velit!</p>
+
+                    <a href="#" class="btn-text">Más información &rarr;</a>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="img/ck-1-large.jpg" alt="Foto 1" class="composition__photo composition__photo--p1">
+                        <img src="img/ck-2-large.jpg" alt="Foto 2" class="composition__photo composition__photo--p2">
+                        <img src="img/ck-3-large.jpg" alt="Foto 3" class="composition__photo composition__photo--p3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-features">
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-world"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Datos globales</h3>
+                        <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptate necessitatibus hic.</p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-compass"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Navegación segura</h3>
+                        <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui, commodi sequi ad.</p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-cloud"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Todo en la nube</h3>
+                        <p class="feature-box__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad cum distinctio sint similique eum deleniti.</p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-clockwise"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Copia de seguridad</h3>
+                        <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, pariatur, accusamus voluptatum voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-services" id="section-services">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Conoce los servicios que podemos ofrecerte
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    Desarrollo Web
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Interactividad</li>
+                                    <li>Multiplataforma</li>
+                                    <li>Escalabilidad</li>
+                                    <li>Seguridad</li>
+                                    <li>Accesibilidad</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-from">Desde</p>
+                                    <p class="card__price-value">3.000 €</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Contacta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">
+                                    Asesoramiento tecnológico
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Orientado a resultados</li>
+                                    <li>Basado en la evidencia</li>
+                                    <li>Completo</li>
+                                    <li>Adaptable</li>
+                                    <li>Eficaz</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-from">Desde</p>
+                                    <p class="card__price-value">2.000 €</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Contacta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">
+                                    Posicionamiento SEO
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Basado en algoritmos</li>
+                                    <li>Orientado a los usuarios</li>
+                                    <li>A largo plazo</li>
+                                    <li>Multifacético</li>
+                                    <li>Mensurable</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-from">Desde</p>
+                                    <p class="card__price-value">6.000 €</p>
+                                </div>
+                                <a href="#popup" class="btn btn--white">Contacta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="btn btn--blue">Descubre todos los servicios</a>
+            </div>
+        </section>
+
+        <section class="section-stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                    ¡Tu navegador no soporta el vídeo!
+                </video>
+            </div>
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Lo que dicen de nosotros
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/ck-8.jpg" alt="Persona feliz" class="story__img">
+                        <figcaption class="story__caption">Juan Gómez</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Hemos mejorado nuestra presencia en Internet</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique autem tempora doloribus suscipit saepe, eius inventore eaque dolore corporis odio quam nemo natus nam accusamus, quia omnis accusantium deleniti ullam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea labore.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/ck-9.jpg" alt="Persona feliz" class="story__img">
+                        <figcaption class="story__caption">Sonia López</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Las ventas por Internet han salvado mi tienda</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt dolore nisi unde aperiam sequi error sunt? Maxime laboriosam, ducimus cum harum tenetur nesciunt sit ab est voluptate dolorem, perspiciatis cumque.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="btn-text">Leer todos los testimonios &rarr;</a>
+            </div>
+        </section>
+
+        <section class="section-form">
+            <div class="row">
+                <div class="form-box">
+                    <div class="form-box__form">
+                        <form action="#" class="form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Pide presupuesto
+                                </h2>
+                            </div>
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Nombre y apellidos" id="name" required>
+                                <label for="name" class="form__label">Nombre y apellidos</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email" id="email" required>
+                                <label for="email" class="form__label">Email</label>
+                            </div>
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="desarrollo-web" name="type">
+                                    <label for="desarrollo-web" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Desarrollo web
+                                    </label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="asesoramiento" name="type">
+                                    <label for="asesoramiento" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Asesoramiento
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <button type="submit" class="btn btn--blue">Next step &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo-azul.png" alt="Logo" class="footer__logo">            
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Empresa</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contacto</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Empleo</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacidad</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Términos legales</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#" class="footer__link">Est nihil deleniti</a> tempore error excepturi cupiditate cum quam nam sed, natus doloribus fugit rerum quasi dolores voluptates facilis eligendi quae sunt.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/ck-5.jpg" alt="Coding photo" class="popup__img">
+                <img src="img/ck-4.jpg" alt="Coding photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-services" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Contacta con nosotros</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Importante &ndash; Por favor, lee estos términos antes de contactar</h3>
+                <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores natus est ducimus explicabo quos beatae quidem pariatur cum ipsa distinctio ratione mollitia quis asperiores, totam, odio nemo incidunt ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam veniam dolores laborum sequi ad corporis est nesciunt, quia saepe recusandae necessitatibus natus voluptas maxime accusantium alias in eius nostrum cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium recusandae quae sequi ea et dolor molestiae, voluptatum consequatur autem illo consectetur corporis id, nam quaerat expedita, labore repellendus maiores natus.</p>
+                <a href="#" class="btn btn--blue">Contacta ahora</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <section class="grid-test">
+        <div class="row">
+            <div class="col-1-of-2">
+                Col 1 de 2
+            </div>
+            <div class="col-1-of-2">
+                Col 1 de 2
+            </div>
         </div>
 
         <div class="row">
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bottom-small">Todos tus datos a salvo</h3>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam nobis minus labore sapiente consequuntur, architecto facere dolor suscipit voluptatum vero odit veritatis fugit deserunt reiciendis mollitia laudantium rerum aspernatur?</p>
-            <h3 class="heading-tertiary u-margin-bottom-small">Datos repartidos por el mundo</h3>
-            <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit molestiae nobis, qui atque sed quaerat aliquam velit voluptatibus voluptas ducimus quasi a odio maxime facere necessitatibus eum nesciunt eius libero.</p>
+            <div class="col-1-of-3">
+                Col 1 de 3
+            </div>
+            <div class="col-1-of-3">
+                Col 1 de 3
+            </div>
+            <div class="col-1-of-3">
+                Col 1 de 3
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-1-of-3">
+                Col 1 de 3
+            </div>
+            <div class="col-2-of-3">
+                Col 2 de 3
+            </div>            
+        </div>
 
-            <a href="#" class="btn-text">Más información &rarr;</a>
-          </div>
-          <div class="col-1-of-2">
-            Imágenes
-          </div>
+        <div class="row">
+            <div class="col-1-of-4">
+                Col 1 de 4
+            </div>
+            <div class="col-1-of-4">
+                Col 1 de 4
+            </div>
+            <div class="col-1-of-4">
+                Col 1 de 4
+            </div>
+            <div class="col-1-of-4">
+                Col 1 de 4
+            </div>
         </div>
-      </section>
-    </main>
 
-    <!-- <section class="grid-test">
-      <div class="row">
-        <div class="col-1-of-2">
-          Col 1 of 2
+        <div class="row">
+            <div class="col-1-of-4">
+                Col 1 de 4
+            </div>
+            <div class="col-1-of-4">
+                Col 1 de 4
+            </div>
+            <div class="col-2-of-4">
+                Col 2 de 4
+            </div>            
         </div>
-        <div class="col-1-of-2">
-          Col 1 of 2
+        
+        <div class="row">
+            <div class="col-1-of-4">
+                Col 1 de 4
+            </div>
+            <div class="col-3-of-4">
+                Col 3 de 4
+            </div>            
         </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-        <div class="col-2-of-3">
-          Col 2 of 3
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-2-of-4">
-          Col 2 of 4
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-3-of-4">
-          Col 3 of 4
-        </div>        
-      </div>
     </section> -->
-  </body>
+</body>
 </html>
