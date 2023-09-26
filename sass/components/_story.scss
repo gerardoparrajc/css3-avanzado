@@ -9,8 +9,16 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
+    @include respond(tab-port) {
+        transform: unset;
+    }
+
     & > * {
         transform: skewX(12deg);
+
+        @include respond(tab-port) {
+            transform: unset;
+        }
     }
 
     &__shape {
@@ -28,6 +36,10 @@
 
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
+
+        @include respond(tab-port) {
+            transform: translateX(-3rem);
+        }
         
     }
 
@@ -39,6 +51,10 @@
 
     &__text {
         transform: skewX(12deg);
+
+        @include respond(tab-port) {
+            transform: unset;
+        }
     }
 
     &__caption {
