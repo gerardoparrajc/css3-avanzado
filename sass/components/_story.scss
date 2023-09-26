@@ -29,7 +29,7 @@
         // circle(radio at x-centro y-centro)
         // Se utiliza el 50% de radio ya que el diámetro será 15rem, por lo que su radio será la mitad del ancho del elemento
         -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);        
 
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
