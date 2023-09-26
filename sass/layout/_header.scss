@@ -3,10 +3,25 @@
     background-image: linear-gradient(to right bottom,
             rgba($color-primario-light, 0.801),
             rgba($color-primario-dark, 0.795)),
-        url(../img/hero.jpg);
+        url(../img/hero-small.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
+
+    /* @media (max-width: 600px) {
+        background-image: linear-gradient(to right bottom,
+            rgba($color-primario-light, 0.801),
+            rgba($color-primario-dark, 0.795)),
+        url(../img/hero-small.jpg);
+    } */
+
+    @media (min-resolution: 192dpi) and (min-width: 1200px), (min-width: 2000px) {
+        background-image: linear-gradient(to right bottom,
+            rgba($color-primario-light, 0.801),
+            rgba($color-primario-dark, 0.795)),
+        url(../img/hero.jpg);
+    }
+
 
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
